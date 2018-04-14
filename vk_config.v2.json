@@ -61,7 +61,7 @@
         },
         "rfc2109": false,
         "secure": true,
-        "value": "a3f500a39dced9728e0d19c625a911abcc0c1fbd04600b9e26227",
+        "value": "67ec82a231df1b74978a7fef681a3538fab163770f76f00ca0e76",
         "version": 0
       },
       {
@@ -120,7 +120,7 @@
         "rest": {},
         "rfc2109": false,
         "secure": true,
-        "value": "9ec6aa05d30c0d704e555adde2a7f754b1747a4016fb17eba7c1f",
+        "value": "cc6ac9b2dc8bc5e21dcdc3c591c61cc453225f47ae0da5a08b1a9",
         "version": 0
       },
       {
@@ -139,159 +139,14 @@
         "rest": {},
         "rfc2109": false,
         "secure": false,
-        "value": "21608396_8ce2581fbc1fa0e076",
-        "version": 0
-      }
-    ]
-  },
-  "89782711021": {
-    "cookies": [
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".login.vk.com",
-        "domain_initial_dot": false,
-        "domain_specified": true,
-        "expires": null,
-        "name": "h",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {
-          "HttpOnly": null
-        },
-        "rfc2109": false,
-        "secure": false,
-        "value": "1",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".login.vk.com",
-        "domain_initial_dot": false,
-        "domain_specified": true,
-        "expires": null,
-        "name": "l",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {
-          "HttpOnly": null
-        },
-        "rfc2109": false,
-        "secure": true,
-        "value": "279286486",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".login.vk.com",
-        "domain_initial_dot": false,
-        "domain_specified": true,
-        "expires": null,
-        "name": "p",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {
-          "HttpOnly": null
-        },
-        "rfc2109": false,
-        "secure": true,
-        "value": "90d05dcb91ed47d57c5e8fce8aa5a6373776f11d0dbb5efe2fbaf",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".login.vk.com",
-        "domain_initial_dot": false,
-        "domain_specified": true,
-        "expires": null,
-        "name": "s",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {
-          "HttpOnly": null
-        },
-        "rfc2109": false,
-        "secure": true,
-        "value": "1",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".vk.com",
-        "domain_initial_dot": true,
-        "domain_specified": true,
-        "expires": null,
-        "name": "remixlang",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {},
-        "rfc2109": false,
-        "secure": false,
-        "value": "0",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".vk.com",
-        "domain_initial_dot": true,
-        "domain_specified": true,
-        "expires": null,
-        "name": "remixsid",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {},
-        "rfc2109": false,
-        "secure": true,
-        "value": "fc79f44935070bbe5de89ea07874e5efb0ad351e0f09b899177ab",
-        "version": 0
-      },
-      {
-        "comment": null,
-        "comment_url": null,
-        "discard": false,
-        "domain": ".vk.com",
-        "domain_initial_dot": true,
-        "domain_specified": true,
-        "expires": null,
-        "name": "remixstid",
-        "path": "/",
-        "path_specified": true,
-        "port": null,
-        "port_specified": false,
-        "rest": {},
-        "rfc2109": false,
-        "secure": false,
-        "value": "2053407020_a4eb23667d0f0e9919",
+        "value": "1865975737_c2e6c61690097d45fd",
         "version": 0
       }
     ],
     "token": {
       "app6222115": {
-        "scope_140492191": {
-          "access_token": "ccc8e8d25eb90e3d26e9c5da022d4a07afda1b38431d0a805eed41353f8bfa7515e8396ecbef722ad0fdc",
+        "scope_140492255": {
+          "access_token": "c869c58089ecb55c33589c5b66388322b3baa5593120348d03794c3d02ef8a4b007bec306e73a6a7fe070",
           "expires_in": "0",
           "user_id": "279286486"
         }

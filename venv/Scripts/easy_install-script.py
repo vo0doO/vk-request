@@ -1,4 +1,4 @@
-#!C:\Users\Елена\PycharmProjects\vk-request\venv\Scripts\python.exe -x
+#!C:\Users\Admin\PycharmProjects\vk-request\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==28.8.0','console_scripts','easy_install'
 __requires__ = 'setuptools==28.8.0'
 import re

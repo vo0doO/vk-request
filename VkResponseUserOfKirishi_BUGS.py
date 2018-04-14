@@ -72,6 +72,10 @@ class Users(object):
 		return self.users.__iter__()
 	
 	def __call__(self, *args, **kwargs):  ## TODO:
+		"""
+
+		:rtype:
+		"""
 		us = []
 		for i in range(17, 70, 1):
 			us.append(Users(count = i).users)
