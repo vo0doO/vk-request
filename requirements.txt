@@ -1,0 +1,2 @@
+numpy
+vk_api
