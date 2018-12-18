@@ -6,12 +6,13 @@ import logging
 import sys
 
 
-logger = logging.getLogger(__name__)
-
-
+LOG_FILENAME = 'messages.log'
 USER_LOGIN = "+79319629413"
 USER_PASSWORD = "e31f567b"
 APP_ID = "6009351"
+
+
+logger = logging.getLogger(__name__)
 
 
 def sender_my_mesages():
@@ -38,10 +39,10 @@ def sender_my_mesages():
 
 # ПОЛУЧАЕМ ЛОГИ
 def get_logs():
-    log_filename = 'messages.log'
+
     fmt = logging.Formatter('%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s')
 
-    file_handler = logging.FileHandler(filename=log_filename)
+    file_handler = logging.FileHandler(filename=LOG_FILENAME)
     file_handler.setFormatter(fmt)
 
     stdout_handler = logging.StreamHandler(sys.stdout)
