@@ -1,0 +1,116 @@
+#!/bin/sh
+# atrun uid=1000 gid=1000
+# mail node 0
+umask 2
+DESKTOP_SESSION=ubuntu; export DESKTOP_SESSION
+LANG=ru_RU.UTF-8; export LANG
+LC_PAPER=ru_RU.UTF-8; export LC_PAPER
+SNAP_VERSION=2018.3.2; export SNAP_VERSION
+PWD=/home/node/PycharmProjects/vk-request; export PWD
+MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path; export MANDATORY_PATH
+LC_TELEPHONE=ru_RU.UTF-8; export LC_TELEPHONE
+LC_ADDRESS=ru_RU.UTF-8; export LC_ADDRESS
+LC_MEASUREMENT=ru_RU.UTF-8; export LC_MEASUREMENT
+SSH_AUTH_SOCK=/tmp/ssh-Hx6O0dKtWHPN/agent.21774; export SSH_AUTH_SOCK
+S_COLORS=auto; export S_COLORS
+XDG_MENU_PREFIX=gnome-; export XDG_MENU_PREFIX
+GJS_DEBUG_OUTPUT=stderr; export GJS_DEBUG_OUTPUT
+WINDOWPATH=2; export WINDOWPATH
+SESSION_MANAGER=local/kirsanov.ddnsfree.com:@/tmp/.ICE-unix/8817,unix/kirsanov.ddnsfree.com:/tmp/.ICE-unix/8817; export SESSION_MANAGER
+TEXTDOMAIN=gdm; export TEXTDOMAIN
+GTK_MODULES=gail:atk-bridge; export GTK_MODULES
+LANGUAGE=ru:en; export LANGUAGE
+XDG_RUNTIME_DIR=/run/user/1000/snap.pycharm-professional; export XDG_RUNTIME_DIR
+J2SDKDIR=/usr/lib/jvm/java-8-oracle; export J2SDKDIR
+GDMSESSION=ubuntu; export GDMSESSION
+XDG_VTNR=2; export XDG_VTNR
+GJS_DEBUG_TOPICS=JS\ ERROR\;JS\ LOG; export GJS_DEBUG_TOPICS
+GIO_LAUNCHED_DESKTOP_FILE=/var/lib/snapd/desktop/applications/pycharm-professional_pycharm-professional.desktop; export GIO_LAUNCHED_DESKTOP_FILE
+LIBVIRT_DEFAULT_URI=qemu:///system; export LIBVIRT_DEFAULT_URI
+ZDOTDIR=; export ZDOTDIR
+CLUTTER_IM_MODULE=xim; export CLUTTER_IM_MODULE
+XDG_CURRENT_DESKTOP=ubuntu:GNOME; export XDG_CURRENT_DESKTOP
+GNOME_SHELL_SESSION_MODE=ubuntu; export GNOME_SHELL_SESSION_MODE
+QT_ACCESSIBILITY=1; export QT_ACCESSIBILITY
+BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/pycharm-professional_pycharm-professional.desktop; export BAMF_DESKTOP_FILE_HINT
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path; export DEFAULTS_PATH
+USER=node; export USER
+SNAP_USER_DATA=/home/node/snap/pycharm-professional/109; export SNAP_USER_DATA
+SNAP_COMMON=/var/snap/pycharm-professional/common; export SNAP_COMMON
+SNAP_CONTEXT=0YBvYXXHTfHsm5rCFHrWL6g9hD4Gwq9r0KVBjSJ54xwM; export SNAP_CONTEXT
+SNAP_REEXEC=; export SNAP_REEXEC
+XAUTHORITY=/run/user/1000/gdm/Xauthority; export XAUTHORITY
+SNAP_NAME=pycharm-professional; export SNAP_NAME
+XMODIFIERS=@im=ibus; export XMODIFIERS
+GTK_IM_MODULE=ibus; export GTK_IM_MODULE
+SNAP_ARCH=amd64; export SNAP_ARCH
+LC_TIME=ru_RU.UTF-8; export LC_TIME
+LC_NUMERIC=ru_RU.UTF-8; export LC_NUMERIC
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DBUS_SESSION_BUS_ADDRESS
+SNAP_DATA=/var/snap/pycharm-professional/109; export SNAP_DATA
+LC_IDENTIFICATION=ru_RU.UTF-8; export LC_IDENTIFICATION
+SNAP_USER_COMMON=/home/node/snap/pycharm-professional/common; export SNAP_USER_COMMON
+LC_NAME=ru_RU.UTF-8; export LC_NAME
+DERBY_HOME=/usr/lib/jvm/java-8-oracle/db; export DERBY_HOME
+SNAP_COOKIE=0YBvYXXHTfHsm5rCFHrWL6g9hD4Gwq9r0KVBjSJ54xwM; export SNAP_COOKIE
+GIO_LAUNCHED_DESKTOP_FILE_PID=21130; export GIO_LAUNCHED_DESKTOP_FILE_PID
+PATH=/home/node/PycharmProjects/vk-request/venv/bin:/home/node/.npm-global/bin:/home/node/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin; export PATH
+XDG_SESSION_ID=2; export XDG_SESSION_ID
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg; export XDG_CONFIG_DIRS
+HOME=/home/node; export HOME
+TERMINAL_EMULATOR=JetBrains-JediTerm; export TERMINAL_EMULATOR
+__INTELLIJ_COMMAND_HISTFILE__=/home/node/.PyCharm2018.3/config/terminal/history/history-19; export __INTELLIJ_COMMAND_HISTFILE__
+XDG_SEAT=seat0; export XDG_SEAT
+XDG_DATA_DIRS=/usr/share/ubuntu:/home/node/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop; export XDG_DATA_DIRS
+SNAP_REVISION=109; export SNAP_REVISION
+LC_MONETARY=ru_RU.UTF-8; export LC_MONETARY
+IM_CONFIG_PHASE=2; export IM_CONFIG_PHASE
+OLDPWD=/etc/netplan; export OLDPWD
+PROJECT_DIR=/home/node/PycharmProjects/vk-request; export PROJECT_DIR
+USERNAME=node; export USERNAME
+TEXTDOMAINDIR=/usr/share/locale/; export TEXTDOMAINDIR
+JAVA_HOME=/usr/lib/jvm/java-8-oracle; export JAVA_HOME
+QT_IM_MODULE=ibus; export QT_IM_MODULE
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1; export GPG_AGENT_INFO
+SHLVL=1; export SHLVL
+J2REDIR=/usr/lib/jvm/java-8-oracle/jre; export J2REDIR
+QT4_IM_MODULE=xim; export QT4_IM_MODULE
+SNAP_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void; export SNAP_LIBRARY_PATH
+XDG_SESSION_TYPE=x11; export XDG_SESSION_TYPE
+SNAP=/snap/pycharm-professional/109; export SNAP
+XDG_SESSION_DESKTOP=ubuntu; export XDG_SESSION_DESKTOP
+LOGNAME=node; export LOGNAME
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated; export GNOME_DESKTOP_SESSION_ID
+SSH_AGENT_PID=21776; export SSH_AGENT_PID
+ZSH=/home/node/.oh-my-zsh; export ZSH
+UPDATE_ZSH_DAYS=13; export UPDATE_ZSH_DAYS
+FZF_BASE=/path/to/fzf/install/dir; export FZF_BASE
+PAGER=less; export PAGER
+LESS=-R; export LESS
+LC_CTYPE=en_US.UTF-8; export LC_CTYPE
+LSCOLORS=Gxfxcxdxbxegedabagacad; export LSCOLORS
+LS_COLORS=rs=0:di=01\;34:ln=01\;36:mh=00:pi=40\;33:so=01\;35:do=01\;35:bd=40\;33\;01:cd=40\;33\;01:or=40\;31\;01:mi=00:su=37\;41:sg=30\;43:ca=30\;41:tw=30\;42:ow=34\;42:st=37\;44:ex=01\;32:\*.tar=01\;31:\*.tgz=01\;31:\*.arc=01\;31:\*.arj=01\;31:\*.taz=01\;31:\*.lha=01\;31:\*.lz4=01\;31:\*.lzh=01\;31:\*.lzma=01\;31:\*.tlz=01\;31:\*.txz=01\;31:\*.tzo=01\;31:\*.t7z=01\;31:\*.zip=01\;31:\*.z=01\;31:\*.Z=01\;31:\*.dz=01\;31:\*.gz=01\;31:\*.lrz=01\;31:\*.lz=01\;31:\*.lzo=01\;31:\*.xz=01\;31:\*.zst=01\;31:\*.tzst=01\;31:\*.bz2=01\;31:\*.bz=01\;31:\*.tbz=01\;31:\*.tbz2=01\;31:\*.tz=01\;31:\*.deb=01\;31:\*.rpm=01\;31:\*.jar=01\;31:\*.war=01\;31:\*.ear=01\;31:\*.sar=01\;31:\*.rar=01\;31:\*.alz=01\;31:\*.ace=01\;31:\*.zoo=01\;31:\*.cpio=01\;31:\*.7z=01\;31:\*.rz=01\;31:\*.cab=01\;31:\*.wim=01\;31:\*.swm=01\;31:\*.dwm=01\;31:\*.esd=01\;31:\*.jpg=01\;35:\*.jpeg=01\;35:\*.mjpg=01\;35:\*.mjpeg=01\;35:\*.gif=01\;35:\*.bmp=01\;35:\*.pbm=01\;35:\*.pgm=01\;35:\*.ppm=01\;35:\*.tga=01\;35:\*.xbm=01\;35:\*.xpm=01\;35:\*.tif=01\;35:\*.tiff=01\;35:\*.png=01\;35:\*.svg=01\;35:\*.svgz=01\;35:\*.mng=01\;35:\*.pcx=01\;35:\*.mov=01\;35:\*.mpg=01\;35:\*.mpeg=01\;35:\*.m2v=01\;35:\*.mkv=01\;35:\*.webm=01\;35:\*.ogm=01\;35:\*.mp4=01\;35:\*.m4v=01\;35:\*.mp4v=01\;35:\*.vob=01\;35:\*.qt=01\;35:\*.nuv=01\;35:\*.wmv=01\;35:\*.asf=01\;35:\*.rm=01\;35:\*.rmvb=01\;35:\*.flc=01\;35:\*.avi=01\;35:\*.fli=01\;35:\*.flv=01\;35:\*.gl=01\;35:\*.dl=01\;35:\*.xcf=01\;35:\*.xwd=01\;35:\*.yuv=01\;35:\*.cgm=01\;35:\*.emf=01\;35:\*.ogv=01\;35:\*.ogx=01\;35:\*.aac=00\;36:\*.au=00\;36:\*.flac=00\;36:\*.m4a=00\;36:\*.mid=00\;36:\*.midi=00\;36:\*.mka=00\;36:\*.mp3=00\;36:\*.mpc=00\;36:\*.ogg=00\;36:\*.ra=00\;36:\*.wav=00\;36:\*.oga=00\;36:\*.opus=00\;36:\*.spx=00\;36:\*.xspf=00\;36:; export LS_COLORS
+NVM_DIR=/home/node/.nvm; export NVM_DIR
+DIRHISTORY_SIZE=30; export DIRHISTORY_SIZE
+ZSH_TMUX_TERM=screen-256color; export ZSH_TMUX_TERM
+_ZSH_TMUX_FIXED_CONFIG=/home/node/.oh-my-zsh/plugins/tmux/tmux.only.conf; export _ZSH_TMUX_FIXED_CONFIG
+GPG_TTY=/dev/pts/0; export GPG_TTY
+VIRTUAL_ENV_DISABLE_PROMPT=1; export VIRTUAL_ENV_DISABLE_PROMPT
+_VIRTUALENVWRAPPER_API=\ mkvirtualenv\ rmvirtualenv\ lsvirtualenv\ showvirtualenv\ workon\ add2virtualenv\ cdsitepackages\ cdvirtualenv\ lssitepackages\ toggleglobalsitepackages\ cpvirtualenv\ setvirtualenvproject\ mkproject\ cdproject\ mktmpenv\ wipeenv\ allvirtualenv; export _VIRTUALENVWRAPPER_API
+VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh; export VIRTUALENVWRAPPER_SCRIPT
+MARKPATH=/home/node/.marks; export MARKPATH
+ZNT_REPO_DIR=/home/node/.oh-my-zsh/plugins/zsh-navigation-tools; export ZNT_REPO_DIR
+ZNT_CONFIG_DIR=/home/node/.config/znt; export ZNT_CONFIG_DIR
+EDITOR=vim; export EDITOR
+ARCHFLAGS=-arch\ x86_64; export ARCHFLAGS
+SSH_KEY_PATH=\~/.ssh/rsa_id; export SSH_KEY_PATH
+VIRTUAL_ENV=/home/node/PycharmProjects/vk-request/venv; export VIRTUAL_ENV
+HISTFILE=/home/node/.PyCharm2018.3/config/terminal/history/history-19; export HISTFILE
+RPROMPT=\$RPROMPT_PREFIX%f%b%k\$\(build_right_prompt\)%{\$reset_color%}\$RPROMPT_SUFFIX; export RPROMPT
+cd /home/node/PycharmProjects/vk\-request || {
+         echo 'Execution directory inaccessible' >&2
+         exit 1
+}
+#!/bin/sh
+
+/home/node/PycharmProjects/vk-request/venv/bin/python3.7 /home/node/PycharmProjects/vk-request/message_sender.py

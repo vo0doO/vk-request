@@ -37,7 +37,7 @@ def sender_my_mesages(db, login, password, api_version, app_id, client_secret):
             logger.exception(f"Сообщение пользователю {usr[0]} не отправленно")
             continue
         conn.commit()
-        time.sleep(100)
+        break
 
 
 # ПОЛУЧАЕМ ЛОГИ

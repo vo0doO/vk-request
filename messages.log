@@ -33,3 +33,138 @@
 2019-01-04 23:36:37,775 INFO vk_api _auth_cookies access_token from config is valid
 2019-01-04 23:36:38,278 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
 2019-01-04 23:36:38,285 INFO message_sender sender_my_mesages Сообщение пользователю 133832176 отправленно
+2019-01-05 00:09:06,969 INFO vk_api auth Auth with login: 89785754108
+2019-01-05 00:09:06,970 INFO vk_api check_sid Checking remixsid...
+2019-01-05 00:09:06,992 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-05 00:10:58,080 INFO vk_api auth Auth with login: 89785754108
+2019-01-05 00:10:58,080 INFO vk_api check_sid Checking remixsid...
+2019-01-05 00:10:58,083 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-05 00:10:58,324 DEBUG connectionpool _make_request https://vk.com:443 "GET /feed2.php HTTP/1.1" 200 166
+2019-01-05 00:10:58,349 INFO vk_api check_sid remixsid is valid
+2019-01-05 00:10:58,349 INFO vk_api _pass_security_check Checking security check request
+2019-01-05 00:10:58,474 DEBUG connectionpool _make_request https://vk.com:443 "GET /settings HTTP/1.1" 200 13589
+2019-01-05 00:10:58,519 INFO vk_api _pass_security_check Security check is not required
+2019-01-05 00:10:58,524 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-05 00:10:58,789 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/stats.trackVisitor HTTP/1.1" 200 34
+2019-01-05 00:10:58,791 INFO vk_api _auth_cookies access_token from config is valid
+2019-01-05 00:10:59,281 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-05 00:10:59,287 INFO message_sender sender_my_mesages Сообщение пользователю 235047822 отправленно
+2019-01-05 00:16:39,162 INFO vk_api auth Auth with login: 89785754108
+2019-01-05 00:16:39,535 INFO vk_api check_sid Checking remixsid...
+2019-01-05 00:16:40,254 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-05 00:16:41,111 DEBUG connectionpool _make_request https://vk.com:443 "GET /feed2.php HTTP/1.1" 200 166
+2019-01-05 00:16:41,409 INFO vk_api check_sid remixsid is valid
+2019-01-05 00:16:41,409 INFO vk_api _pass_security_check Checking security check request
+2019-01-05 00:16:41,602 DEBUG connectionpool _make_request https://vk.com:443 "GET /settings HTTP/1.1" 200 13600
+2019-01-05 00:16:41,659 INFO vk_api _pass_security_check Security check is not required
+2019-01-05 00:16:41,667 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-05 00:16:41,975 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/stats.trackVisitor HTTP/1.1" 200 34
+2019-01-05 00:16:41,977 INFO vk_api _auth_cookies access_token from config is valid
+2019-01-05 00:16:42,591 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 193
+2019-01-05 00:16:42,593 ERROR message_sender sender_my_mesages Сообщение пользователю 219396100 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:16:43,102 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 195
+2019-01-05 00:16:43,102 ERROR message_sender sender_my_mesages Сообщение пользователю 145983109 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:16:43,577 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-05 00:16:43,912 INFO message_sender sender_my_mesages Сообщение пользователю 144734244 отправленно
+2019-01-05 00:32:39,805 INFO vk_api auth Auth with login: 89785754108
+2019-01-05 00:32:39,806 INFO vk_api check_sid Checking remixsid...
+2019-01-05 00:32:39,810 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-05 00:32:40,239 DEBUG connectionpool _make_request https://vk.com:443 "GET /feed2.php HTTP/1.1" 200 166
+2019-01-05 00:32:40,242 INFO vk_api check_sid remixsid is valid
+2019-01-05 00:32:40,242 INFO vk_api _pass_security_check Checking security check request
+2019-01-05 00:32:40,405 DEBUG connectionpool _make_request https://vk.com:443 "GET /settings HTTP/1.1" 200 13601
+2019-01-05 00:32:40,466 INFO vk_api _pass_security_check Security check is not required
+2019-01-05 00:32:40,468 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-05 00:32:41,013 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/stats.trackVisitor HTTP/1.1" 200 34
+2019-01-05 00:32:41,015 INFO vk_api _auth_cookies access_token from config is valid
+2019-01-05 00:32:41,577 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 194
+2019-01-05 00:32:41,579 ERROR message_sender sender_my_mesages Сообщение пользователю 219396100 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:32:42,197 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 194
+2019-01-05 00:32:42,199 ERROR message_sender sender_my_mesages Сообщение пользователю 145983109 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:32:42,776 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 195
+2019-01-05 00:32:42,778 ERROR message_sender sender_my_mesages Сообщение пользователю 143970881 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:32:43,402 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-05 00:32:43,404 INFO message_sender sender_my_mesages Сообщение пользователю 141462213 отправленно
+2019-01-05 00:37:01,881 INFO vk_api auth Auth with login: 89785754108
+2019-01-05 00:37:01,882 INFO vk_api check_sid Checking remixsid...
+2019-01-05 00:37:01,886 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-05 00:37:02,195 DEBUG connectionpool _make_request https://vk.com:443 "GET /feed2.php HTTP/1.1" 200 166
+2019-01-05 00:37:02,198 INFO vk_api check_sid remixsid is valid
+2019-01-05 00:37:02,198 INFO vk_api _pass_security_check Checking security check request
+2019-01-05 00:37:02,352 DEBUG connectionpool _make_request https://vk.com:443 "GET /settings HTTP/1.1" 200 13600
+2019-01-05 00:37:02,453 INFO vk_api _pass_security_check Security check is not required
+2019-01-05 00:37:02,459 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-05 00:37:02,752 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/stats.trackVisitor HTTP/1.1" 200 34
+2019-01-05 00:37:02,754 INFO vk_api _auth_cookies access_token from config is valid
+2019-01-05 00:37:03,317 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 194
+2019-01-05 00:37:03,319 ERROR message_sender sender_my_mesages Сообщение пользователю 219396100 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:37:03,835 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 195
+2019-01-05 00:37:03,837 ERROR message_sender sender_my_mesages Сообщение пользователю 145983109 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:37:04,386 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 195
+2019-01-05 00:37:04,389 ERROR message_sender sender_my_mesages Сообщение пользователю 143970881 не отправленно
+Traceback (most recent call last):
+  File "/home/node/PycharmProjects/vk-request/message_sender.py", line 33, in sender_my_mesages
+    vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 646, in __call__
+    return self._vk.method(self._method, kwargs)
+  File "/home/node/PycharmProjects/vk-request/venv/lib/python3.7/site-packages/vk_api/vk_api.py", line 615, in method
+    raise error
+vk_api.exceptions.ApiError: [902] Can't send messages to this user due to their privacy settings
+2019-01-05 00:37:04,887 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-05 00:37:04,893 INFO message_sender sender_my_mesages Сообщение пользователю 102981702 отправленно
