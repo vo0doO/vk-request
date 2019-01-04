@@ -1,0 +1,35 @@
+2019-01-04 23:28:14,047 INFO vk_api auth Auth with login: 89785754108
+2019-01-04 23:28:14,048 INFO vk_api check_sid Checking remixsid...
+2019-01-04 23:28:14,048 INFO vk_api check_sid No remixsid
+2019-01-04 23:28:14,048 INFO vk_api _auth_cookies remixsid from config is not valid: None
+2019-01-04 23:28:14,048 INFO vk_api _vk_login Logging in...
+2019-01-04 23:28:14,052 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-04 23:28:14,338 DEBUG connectionpool _make_request https://vk.com:443 "GET / HTTP/1.1" 200 9838
+2019-01-04 23:28:14,372 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): login.vk.com:443
+2019-01-04 23:28:14,699 DEBUG connectionpool _make_request https://login.vk.com:443 "POST / HTTP/1.1" 302 20
+2019-01-04 23:28:14,804 DEBUG connectionpool _make_request https://vk.com:443 "GET /login.php?act=slogin&to=&s=1&__q_hash=6e195eb337146650ed1ffdd88e2f992e HTTP/1.1" 200 837
+2019-01-04 23:28:14,810 INFO vk_api _vk_login Got remixsid
+2019-01-04 23:28:14,811 INFO vk_api _pass_security_check Checking security check request
+2019-01-04 23:28:14,811 INFO vk_api _pass_security_check Security check is not required
+2019-01-04 23:28:14,811 INFO vk_api _auth_cookies access_token from config is not valid: None
+2019-01-04 23:28:14,813 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): oauth.vk.com:443
+2019-01-04 23:28:15,210 DEBUG connectionpool _make_request https://oauth.vk.com:443 "GET /authorize?client_id=6222115&scope=140492255&response_type=token HTTP/1.1" 200 2637
+2019-01-04 23:28:15,279 DEBUG connectionpool _make_request https://login.vk.com:443 "GET /?act=grant_access&client_id=6222115&settings=140492255&redirect_uri=&response_type=token&group_ids=&token_type=0&v=&state=&display=page&ip_h=1eb9b63e428cba70f8&hash=1546633695_3dbb9cc8b34a058a7b&https=1 HTTP/1.1" 302 20
+2019-01-04 23:28:15,359 DEBUG connectionpool _make_request https://oauth.vk.com:443 "GET /blank.html HTTP/1.1" 200 474
+2019-01-04 23:28:15,363 INFO vk_api _api_login Got access_token
+2019-01-04 23:28:15,368 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-04 23:28:15,720 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-04 23:28:15,722 INFO message_sender sender_my_mesages Сообщение пользователю 178074841 отправленно
+2019-01-04 23:36:36,980 INFO vk_api auth Auth with login: 89785754108
+2019-01-04 23:36:36,980 INFO vk_api check_sid Checking remixsid...
+2019-01-04 23:36:36,985 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): vk.com:443
+2019-01-04 23:36:37,239 DEBUG connectionpool _make_request https://vk.com:443 "GET /feed2.php HTTP/1.1" 200 169
+2019-01-04 23:36:37,242 INFO vk_api check_sid remixsid is valid
+2019-01-04 23:36:37,243 INFO vk_api _pass_security_check Checking security check request
+2019-01-04 23:36:37,420 DEBUG connectionpool _make_request https://vk.com:443 "GET /settings HTTP/1.1" 200 13606
+2019-01-04 23:36:37,524 INFO vk_api _pass_security_check Security check is not required
+2019-01-04 23:36:37,531 DEBUG connectionpool _new_conn Starting new HTTPS connection (1): api.vk.com:443
+2019-01-04 23:36:37,773 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/stats.trackVisitor HTTP/1.1" 200 34
+2019-01-04 23:36:37,775 INFO vk_api _auth_cookies access_token from config is valid
+2019-01-04 23:36:38,278 DEBUG connectionpool _make_request https://api.vk.com:443 "POST /method/messages.send HTTP/1.1" 200 38
+2019-01-04 23:36:38,285 INFO message_sender sender_my_mesages Сообщение пользователю 133832176 отправленно

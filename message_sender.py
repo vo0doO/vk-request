@@ -4,23 +4,26 @@ import sqlite3
 from numpy import random
 import logging
 import sys
+import os
 
 
-LOG_FILENAME = 'messages.log'
-USER_LOGIN = "+79319629413"
-USER_PASSWORD = "e31f567b"
+LOG_FILENAME = os.path.dirname(os.path.abspath(__file__)) + '/messages.log'
+PATH_TO_USERS_DB = os.path.dirname(os.path.abspath(__file__)) + '/kirishi_users.db'
+USER_LOGIN = "89785754108"
+USER_PASSWORD = "udubis49"
 APP_ID = "6009351"
+API_VER = '5.73'
+CLIENT_SECRET = '415c746e415c746e415c746ee54107c6694415c415c746e1858a90711ebafe24fd0637f'
 
 
 logger = logging.getLogger(__name__)
 
-
-def sender_my_mesages():
-    conn = sqlite3.connect("/home/node/PycharmProjects/vk-request/kirishi_users.db")
+# ОТПРАВИТЕЛЬ СООБЩЕНИЙ
+def sender_my_mesages(db, login, password, api_version, app_id, client_secret):
+    conn = sqlite3.connect(db)
     cursor = conn.cursor()
     conn.row_factory = sqlite3.Row
-    sql = "SELECT * FROM `kirishiVkUsers` WHERE `message_send` isnull"
-    login, password, api_version, app_id, client_secret = '+79319629413', 'e31f567b', '5.73', '6009351', '415c746e415c746e415c746ee54107c6694415c415c746e1858a90711ebafe24fd0637f'
+    sql = 'SELECT * FROM kirishiVkUsers1 WHERE `message_send` isnull'
     vk_session = vk_api.VkApi(login, password, api_version, app_id, client_secret)
     vk_session.auth()
     vk = vk_session.get_api()
@@ -28,7 +31,7 @@ def sender_my_mesages():
         random_mess_id = random.randint(111111111, 999999999)
         try:
             vk.messages.send(user_id = int(f"{usr[0]}"), message = f"Здравствуйте {usr[1]} {usr[2]}. Вам предварительно одобрен займ, до 30 000 руб. Звоните: +7-921-444-73-44", random_id = random_mess_id)
-            cursor.execute(f"UPDATE kirishiVkUsers SET message_send={random_mess_id} WHERE id={usr[0]}")
+            cursor.execute(f"UPDATE kirishiVkUsers1 SET message_send={random_mess_id} WHERE id={usr[0]}")
             logger.info(f"Сообщение пользователю {usr[0]} отправленно")
         except:
             logger.exception(f"Сообщение пользователю {usr[0]} не отправленно")
@@ -38,11 +41,11 @@ def sender_my_mesages():
 
 
 # ПОЛУЧАЕМ ЛОГИ
-def get_logs():
+def get_logs(logfiles):
 
     fmt = logging.Formatter('%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s')
 
-    file_handler = logging.FileHandler(filename=LOG_FILENAME)
+    file_handler = logging.FileHandler(filename=logfiles)
     file_handler.setFormatter(fmt)
 
     stdout_handler = logging.StreamHandler(sys.stdout)
@@ -59,5 +62,5 @@ def get_logs():
 
 
 if __name__ == "__main__":
-    root_logger = get_logs()
-    sender_my_mesages()
+    root_logger = get_logs(LOG_FILENAME)
+    sender_my_mesages(PATH_TO_USERS_DB, USER_LOGIN, USER_PASSWORD, API_VER, APP_ID, CLIENT_SECRET)

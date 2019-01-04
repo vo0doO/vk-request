@@ -2,10 +2,18 @@
 
 import vk_api
 import sqlite3
+import logging
+import os, sys
 
-conn = sqlite3.connect("/home/node/PycharmProjects/vk-request/kirishi_users.db")
+
+LOG_FILENAME = os.path.dirname(os.path.abspath(__file__)) + "/vk-response-to-write-db.log"
+
+
+logger = logging.getLogger(__name__)
+
+conn = sqlite3.connect("/home/node/PycharmProjects/vk-request/kirishi_users_20_40.db")
 cursor = conn.cursor()
-#cursor.execute("CREATE TABLE kirishiVkUsers (id integer, first_name text, last_name text, sex integer, last_seen_time integer, last_seen_platform integer)")
+#cursor.execute("CREATE TABLE kirishiVkUsers2040 (id integer, first_name text, last_name text, sex integer, last_seen_time integer, last_seen_platform integer)")
 
 class Users():
     """
@@ -14,17 +22,15 @@ class Users():
 
     __slots__ = ('users', 'age')
 
-    af = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
-          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62, 63, 64, 65, 66]
-    at = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
-          44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 62, 63, 64, 65, 66]
+    af = [f for f in range(20, 41)]
+    at = [t for t in range(20, 41)]
 
     def search_users(count):
-        login, password, api_version, app_id, client_secret = '89785754108', 'udubis49', '5.73', '6009351', '415c746e415c746e415c746ee54107c6694415c415c746e1858a90711ebafe24fd0637f'
-        vk_session = vk_api.VkApi(login, password, api_version, app_id, client_secret)
+        login, password = '89785754108', 'udubis49'
+        vk_session = vk_api.VkApi(login, password, api_version="5.67", app_id="6009351", client_secret="735b008e735b008e735b008e817300b2897735b735b008e28a62d138fd3f4138278dcfb", scope=140492191)
         try:
             
-            vk_session.auth(token_only=True)
+            vk_session.auth()
         except vk_api.AuthError as errorsmg:
             print(errorsmg)
             return
@@ -121,7 +127,7 @@ def main():
         if gen is not None:
             for user in gen:
                 try:
-                    cursor.execute(f"INSERT OR IGNORE INTO kirishiVkUsers VALUES ({user['id']}, '{user['first_name']}', '{user['last_name']}', {user['sex']}, {user['last_seen']['time']}, {user['last_seen']['platform']})")
+                    cursor.execute(f"INSERT OR IGNORE INTO kirishiVkUsers VALUES ({user['id']}, '{user['first_name']}', '{user['last_name']}', {user['sex']}, time.ctime({user['last_seen']['time']}), {user['last_seen']['platform']})")
                 except:
                     continue
                 u.append(user)
@@ -145,11 +151,33 @@ def test(u):
     result = len(user_id_list_2)
     print(result)
     z=5
-u=main()
+u = main()
 test(u)
 
-x=2
+x = 2
 
+
+def get_logs():
+
+    fmt = logging.Formatter('%(asctime)s %(levelname)s %(module)s %(funcName)s %(message)s')
+
+    file_handler = logging.FileHandler(filename=LOG_FILENAME)
+    file_handler.setFormatter(fmt)
+
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stdout_handler.setFormatter(fmt)
+
+    root_logger = logging.getLogger()
+
+    root_logger.addHandler(file_handler)
+    root_logger.addHandler(stdout_handler)
+
+    root_logger.setLevel(logging.DEBUG)
+
+    return root_logger
 
 if __name__ == "__main__":
+    # root_logger = get_logs()
+
+    
     print('Готово')
