@@ -9,8 +9,8 @@ import os
 
 LOG_FILENAME = os.path.dirname(os.path.abspath(__file__)) + '/messages.log'
 PATH_TO_USERS_DB = os.path.dirname(os.path.abspath(__file__)) + '/kirishi_users.db'
-USER_LOGIN = "89785754108"
-USER_PASSWORD = "udubis49"
+USER_LOGIN = "89602607508"
+USER_PASSWORD = "mmmmMMMM0809"
 APP_ID = "6009351"
 API_VER = '5.73'
 CLIENT_SECRET = '415c746e415c746e415c746ee54107c6694415c415c746e1858a90711ebafe24fd0637f'
